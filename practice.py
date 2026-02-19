@@ -1,5 +1,9 @@
 expenses = []
 
+def add_greeting():
+    print("Hello from new feature branch!!!")
+
+
 def print_menu():
     print("1. Add Expense")
     print("2. View all Expences")
@@ -80,6 +84,7 @@ def execution(choice):
 
 def main():
     while True:
+        add_greeting()
         print_menu()
         choice = get_input()
         result = execution(choice)
